@@ -7,7 +7,7 @@ export const Services = () => {
       <div className="container-desktop py-5 lg:py-16">
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-4xl font-bold mb-3">Nossos serviços</h2>
-          <p className="mb-5 text-lg">
+          <p className="mb-5 text-lg text-center">
             Ajudamos para que você receba tudo o que tem direito após um
             acidente
           </p>

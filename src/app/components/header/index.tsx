@@ -67,12 +67,14 @@ export const Header = () => {
         className={`flex justify-between items-center container-desktop h-20`}
       >
         <div className="w-full lg:w-auto flex justify-between items-center">
-          <Image
-            src="/logo.svg"
-            width={154}
-            height={64}
-            alt="Logo DPVAT Campinas"
-          />
+          <a href="#">
+            <Image
+              src="/logo.svg"
+              width={154}
+              height={64}
+              alt="Logo DPVAT Campinas"
+            />
+          </a>
 
           <div className="lg:hidden">
             <Hamburger toggled={isOpen} toggle={setIsOpen} rounded />

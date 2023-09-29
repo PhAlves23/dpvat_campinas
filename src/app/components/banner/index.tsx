@@ -20,8 +20,8 @@ export const Banner = () => {
             />
           </div>
           <p className="text-lg mb-3">
-            A Mais In te ajuda a receber todas as indenizações a que tem direito
-            após um acidente sem qualquer burocracia,{" "}
+            A DPVAT Campinas te ajuda a receber todas as indenizações a que tem
+            direito após um acidente sem qualquer burocracia,{" "}
             <span className="text-primary font-bold">
               incluindo o seguro DPVAT
             </span>

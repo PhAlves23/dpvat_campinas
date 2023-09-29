@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 export const WhatsAppButton = () => {
   return (
-    <div className="fixed right-8 bottom-16">
+    <div className="fixed right-8 bottom-16 z-50">
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
