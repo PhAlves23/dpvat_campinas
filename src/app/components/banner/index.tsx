@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 export const Banner = () => {
   return (
-    <div className="bg-[#006093] text-white">
+    <div className="bg-secondary text-white">
       <div className="container-desktop p-5 pb-10 gap-10 lg:gap-0 lg:py-28 lg:h-[75vh] flex flex-col lg:flex-row relative">
         <div className="lg:max-w-2xl">
           <div className="flex items-end">
@@ -22,7 +22,7 @@ export const Banner = () => {
           <p className="text-lg mb-3">
             A Mais In te ajuda a receber todas as indenizações a que tem direito
             após um acidente sem qualquer burocracia,{" "}
-            <span className="text-[#fe9501] font-bold">
+            <span className="text-primary font-bold">
               incluindo o seguro DPVAT
             </span>
             !
