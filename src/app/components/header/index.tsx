@@ -57,6 +57,18 @@ export const Header = () => {
     };
   }, [prevScrollPos]);
 
+  const logoVariant = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
     <div
       className={`sticky left-0 right-0 top-0 lg:sticky bg-gray-50 shadow-sm  z-50  ${
@@ -69,14 +81,19 @@ export const Header = () => {
         className={`flex justify-between items-center container-desktop h-20`}
       >
         <div className="w-full lg:w-auto flex justify-between items-center">
-          <a href="#">
+          <motion.a
+            variants={logoVariant}
+            initial="initial"
+            animate="animate"
+            href="#"
+          >
             <Image
               src="/logo.svg"
               width={154}
               height={64}
               alt="Logo DPVAT Campinas"
             />
-          </a>
+          </motion.a>
 
           <div className="lg:hidden">
             <Hamburger toggled={isOpen} toggle={setIsOpen} rounded />

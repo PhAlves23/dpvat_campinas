@@ -41,3 +41,5 @@ export const menuVariants = {
     transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
 };
+
+//BANNER
