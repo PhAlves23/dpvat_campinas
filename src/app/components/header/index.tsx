@@ -113,7 +113,10 @@ export const Header = () => {
           )}
         </nav>
 
-        <Link href="https://www.instagram.com" target="_blank">
+        <Link
+          href="https://api.whatsapp.com/send?phone=5519999985348"
+          target="_blank"
+        >
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 0.8 } }}
