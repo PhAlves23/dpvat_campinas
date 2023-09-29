@@ -21,3 +21,7 @@ body {
   color: black;
   background: white;
 }
+
+.container-desktop {
+  @apply container max-w-6xl my-0 mx-auto px-5 xl:px-0;
+}

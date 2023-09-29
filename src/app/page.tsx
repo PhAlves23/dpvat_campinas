@@ -1,3 +1,13 @@
+import { Banner } from "./components/banner";
+import { Header } from "./components/header";
+import { Services } from "./components/services";
+
 export default function Home() {
-  return <main>DPVAT Campinas</main>;
+  return (
+    <>
+      <Header />
+      <Banner />
+      <Services />
+    </>
+  );
 }
