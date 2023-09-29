@@ -5,7 +5,7 @@ import { FiArrowRight } from "react-icons/fi";
 export const Banner = () => {
   return (
     <div className="bg-secondary text-white">
-      <div className="container-desktop p-5 pb-10 gap-10 lg:gap-0 lg:py-28 lg:h-[75vh] flex flex-col lg:flex-row relative">
+      <div className="container-desktop p-5 pb-10 gap-10 lg:gap-0 lg:py-28 lg:h-[37.5rem] flex flex-col lg:flex-row relative">
         <div className="lg:max-w-2xl z-10">
           <div className="flex items-end">
             <h2 className="text-2xl font-semibold mb-3">
