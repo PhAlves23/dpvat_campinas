@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "DPVAT Campinas",
-  description: "DPVAT Campinas | Seguro Obrigatório",
+  description: "DPVAT Campinas | Sua Tranquilidade, Nossa Missão!",
 };
 
 export default function RootLayout({

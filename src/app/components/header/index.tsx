@@ -60,7 +60,9 @@ export const Header = () => {
   return (
     <div
       className={`sticky left-0 right-0 top-0 lg:sticky bg-gray-50 shadow-sm  z-50  ${
-        showMenu ? "opacity-100" : "opacity-0"
+        showMenu
+          ? "opacity-100 transition-all duration-300"
+          : "opacity-0 z-[-1] transition-all duration-200"
       }`}
     >
       <header
@@ -97,10 +99,14 @@ export const Header = () => {
                       : menuMobileItemVariants
                   }
                   key={title}
-                  className={`text-blue-900 py-3 px-3`}
                   onClick={handleSelectedMenuItem}
                 >
-                  <a href={url}>{title}</a>
+                  <a
+                    href={url}
+                    className="text-blue-900 py-3 px-3 hover:bg-gray-200 hover:border-b-primary transition-all duration-300 cursor-pointer block"
+                  >
+                    {title}
+                  </a>
                 </motion.li>
               ))}
             </motion.ul>

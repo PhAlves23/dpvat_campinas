@@ -1,4 +1,6 @@
+"use client";
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
 import clsx from "clsx";
 
 interface ButtonProps {
@@ -19,7 +21,9 @@ export const Button = ({
   };
 
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.9 }}
       className={clsx(
         variantsStyle.base,
         variantsStyle[variants],
@@ -28,6 +32,6 @@ export const Button = ({
     >
       {children}
       {Icon && <Icon size={20} />}
-    </button>
+    </motion.button>
   );
 };
