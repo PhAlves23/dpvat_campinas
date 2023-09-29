@@ -84,7 +84,7 @@ export const Banner = () => {
               Sofreu um acidente e não sabe se tem direito a alguma indenização?
             </h2>
 
-            <div className="w-full" data-aos="fade-left">
+            <div className="w-full lg:w-0" data-aos="fade-left">
               <img
                 src="/banner-image.webp"
                 width={150}

@@ -21,11 +21,11 @@ export const Purpose = () => {
   const imageVariant = {
     initial: {
       opacity: inView ? 1 : 0,
-      x: inView ? -100 : 0,
+      x: inView ? -30 : 0,
     },
     animate: {
       opacity: inView ? 1 : 0,
-      x: inView ? 0 : -100,
+      x: inView ? 0 : -30,
       transition: {
         duration: 0.8,
         delay: 0.3,
@@ -36,11 +36,11 @@ export const Purpose = () => {
   const contentVariant = {
     initial: {
       opacity: inView ? 1 : 0,
-      x: inView ? 100 : 0,
+      x: inView ? 20 : 0,
     },
     animate: {
       opacity: inView ? 1 : 0,
-      x: inView ? 0 : 100,
+      x: inView ? 0 : 20,
       transition: {
         duration: 0.8,
         delay: 0.3,
