@@ -3,7 +3,7 @@ import { CardServices } from "../card_services";
 
 export const Services = () => {
   return (
-    <section className="bg-orange-50">
+    <section id="services" className="bg-orange-50">
       <div className="container-desktop py-5 lg:py-16">
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-4xl font-bold mb-3">Nossos serviços</h2>

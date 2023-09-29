@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Purpose = () => {
   return (
-    <section className="bg-secondary">
+    <section id="about" className="bg-secondary">
       <div className="container-desktop py-5 pb-10 lg:py-16">
         <div className="w-full flex flex-col lg:flex-row justify-between gap-10 lg:gap-20 items-center text-white">
           <Image

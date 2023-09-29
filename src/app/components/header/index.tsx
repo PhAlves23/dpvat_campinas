@@ -1,30 +1,11 @@
 "use client";
+import { headerLinks } from "@/app/mocks";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 export const Header = () => {
-  const headerLinks = [
-    {
-      id: 1,
-      title: "Página Inicial",
-      url: "#",
-    },
-    {
-      id: 2,
-      title: "Quem Somos",
-      url: "#about",
-    },
-    {
-      id: 3,
-      title: "Como te Ajudamos",
-      url: "#help-you",
-    },
-    {
-      id: 4,
-      title: "Serviços",
-      url: "#services",
-    },
-  ];
   const [isActive, setIsActive] = useState(false);
 
   const handleToggleActive = (id: number) => {
@@ -42,7 +23,7 @@ export const Header = () => {
         />
 
         <nav className="hidden lg:block">
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-3">
             {headerLinks?.map(({ id, title, url }) => (
               <li
                 key={title}
@@ -55,9 +36,18 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <button className="hidden lg:block bg-orange-400 text-white py-3 px-6 rounded-full">
-          Entrar em contato
-        </button>
+        <Link href="https://www.instagram.com" target="_blank">
+          <button className="hidden lg:block bg-orange-400 text-white py-3 px-6 rounded-full">
+            Entrar em contato
+          </button>
+        </Link>
+        {/* <Link
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiOutlineInstagram size={32} className="text-secondary" />
+        </Link> */}
       </header>
     </div>
   );
