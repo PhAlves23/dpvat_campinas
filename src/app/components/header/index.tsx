@@ -120,7 +120,7 @@ export const Header = () => {
                 >
                   <a
                     href={url}
-                    className="text-blue-900 py-3 px-3 hover:bg-gray-200 hover:border-b-primary transition-all duration-300 cursor-pointer block"
+                    className="text-blue-900 py-3 px-3 hover:bg-gray-200 hover:rounded-md hover:border-b-primary transition-all duration-300 cursor-pointer block"
                   >
                     {title}
                   </a>

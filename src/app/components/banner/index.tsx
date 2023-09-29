@@ -83,20 +83,21 @@ export const Banner = () => {
             <h2 className="text-2xl font-semibold mb-3">
               Sofreu um acidente e não sabe se tem direito a alguma indenização?
             </h2>
-            <motion.div
-              className="w-full"
-              variants={personVariant}
-              initial="hide"
-              animate="show"
-            >
-              <Image
+            <div className="w-full" data-aos="fade-left">
+              <img
+                src="/banner-image.webp"
+                width={150}
+                height={184}
+                alt="dsadasdas"
+              />
+              {/* <Image
                 className="pb-3 md:hidden"
                 src="/banner-image.webp"
                 width={150}
                 height={184}
                 alt="Banner Image"
-              />
-            </motion.div>
+              /> */}
+            </div>
           </div>
           <p className="text-lg mb-3">
             A DPVAT Campinas te ajuda a receber todas as indenizações a que tem
@@ -123,16 +124,28 @@ export const Banner = () => {
             <Button icon={FiArrowRight}>Como te ajudamos</Button>
           </motion.div>
         </motion.div>
-        <motion.div variants={personVariant} initial="hide" animate="show">
-          <Image
+
+        {/* <motion.div variants={personVariant} initial="hide" animate="show"> */}
+        <div
+          className="hidden md:block lg:absolute lg:right-0 lg:bottom-0"
+          data-aos="fade-left"
+        >
+          <img
+            src="/banner-image.webp"
+            width={418}
+            height={513}
+            alt="dsadasdas"
+          />
+          {/* <Image
             className="hidden lg:block lg:absolute lg:right-0 lg:bottom-0"
             src="/banner-image.webp"
             width={418}
             height={513}
             alt="Banner Image"
             loading="lazy"
-          />
-        </motion.div>
+          /> */}
+        </div>
+        {/* </motion.div> */}
       </div>
     </div>
   );

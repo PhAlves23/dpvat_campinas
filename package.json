@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
     "hamburger-react": "^2.5.0",
@@ -20,6 +21,7 @@
     "react-responsive": "^9.0.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.5",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",

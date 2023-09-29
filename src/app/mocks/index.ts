@@ -4,20 +4,21 @@ export const headerLinks = [
     title: "Página Inicial",
     url: "#",
   },
+
   {
     id: 2,
-    title: "Quem Somos",
-    url: "#about",
-  },
-  {
-    id: 3,
     title: "Como te Ajudamos",
     url: "#help-you",
   },
   {
-    id: 4,
+    id: 3,
     title: "Serviços",
     url: "#services",
+  },
+  {
+    id: 4,
+    title: "Quem Somos",
+    url: "#about",
   },
 ];
 
