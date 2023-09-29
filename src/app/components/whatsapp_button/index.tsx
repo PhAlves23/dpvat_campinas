@@ -1,10 +1,15 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 export const WhatsAppButton = () => {
   return (
     <div className="fixed right-8 bottom-16">
-      <div className="bg-green-600 w-16 h-16 flex justify-center items-center rounded-full cursor-pointer">
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className="bg-green-600 w-16 h-16 flex justify-center items-center rounded-full cursor-pointer"
+      >
         <Link
           href="https://api.whatsapp.com/send?phone=5519999985348"
           target="_blank"
@@ -16,7 +21,7 @@ export const WhatsAppButton = () => {
             alt="WhatsApp imagem"
           />
         </Link>
-      </div>
+      </motion.button>
     </div>
   );
 };
