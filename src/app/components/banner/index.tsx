@@ -83,12 +83,14 @@ export const Banner = () => {
             <h2 className="text-2xl font-semibold mb-3">
               Sofreu um acidente e não sabe se tem direito a alguma indenização?
             </h2>
+
             <div className="w-full" data-aos="fade-left">
               <img
                 src="/banner-image.webp"
                 width={150}
                 height={184}
                 alt="dsadasdas"
+                className="pb-3 md:hidden"
               />
               {/* <Image
                 className="pb-3 md:hidden"

@@ -16,7 +16,7 @@ export const CardServices = ({
 }: CardServicesProps) => {
   return (
     <div>
-      <div className="flex flex-col min-h-[490px] justify-center items-center rounded-t-lg">
+      <div className="flex flex-col min-h-[490px] justify-center items-center rounded-t-lg hover:scale-105 transition-all duration-300">
         <Image
           src={image ? image : ""}
           width={370}
