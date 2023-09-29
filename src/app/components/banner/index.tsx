@@ -3,29 +3,35 @@
 import Image from "next/image";
 import { Button } from "../button";
 import { FiArrowRight } from "react-icons/fi";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 export const Banner = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const controls = useAnimation();
+
+  const [ref, inView] = useInView({});
 
   useEffect(() => {
-    // A imagem será carregada automaticamente quando você usar o componente <Image>
-    setImageLoaded(true);
-  }, []);
+    if (inView) {
+      controls.start("show");
+    } else {
+      controls.start("hide");
+    }
+  }, [inView, controls]);
 
   const personVariant = {
     show: {
       x: 0,
-      opacity: imageLoaded ? 1 : 0,
+      opacity: 1,
       transition: {
         duration: 1,
         delay: 1,
       },
     },
     hide: {
-      x: imageLoaded ? 500 : 0,
-      opacity: imageLoaded ? 1 : 0,
+      x: inView ? 500 : 0,
+      opacity: 0,
       transition: {
         duration: 1,
         delay: 1,
@@ -35,12 +41,12 @@ export const Banner = () => {
 
   const textVariant = {
     initial: {
-      opacity: 0,
-      y: -100,
+      opacity: inView ? 1 : 0,
+      y: inView ? -100 : 0,
     },
     animate: {
-      opacity: 1,
-      y: 0,
+      opacity: inView ? 1 : 0,
+      y: inView ? 0 : -100,
       transition: {
         duration: 0.8,
         delay: 0.3,
@@ -63,7 +69,10 @@ export const Banner = () => {
 
   return (
     <div className="bg-secondary text-white">
-      <div className="container-desktop p-5 pb-10 gap-10 lg:gap-0 lg:py-28 lg:h-[37.5rem] flex flex-col lg:flex-row relative">
+      <div
+        className="container-desktop p-5 pb-10 gap-10 lg:gap-0 lg:py-28 lg:h-[37.5rem] flex flex-col lg:flex-row relative"
+        ref={ref}
+      >
         <motion.div
           variants={textVariant}
           initial="initial"
