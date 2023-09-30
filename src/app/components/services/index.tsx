@@ -23,11 +23,11 @@ export const Services = () => {
   const h2Variant = {
     initial: {
       opacity: inView ? 1 : 0,
-      y: inView ? -100 : 0,
+      y: inView ? -30 : 0,
     },
     animate: {
       opacity: inView ? 1 : 0,
-      y: inView ? 0 : -100,
+      y: inView ? 0 : -30,
       transition: {
         duration: 0.8,
         delay: 0.3,

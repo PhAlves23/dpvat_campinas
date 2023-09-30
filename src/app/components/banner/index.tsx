@@ -6,6 +6,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import Link from "next/link";
 
 export const Banner = () => {
   const controls = useAnimation();
@@ -122,8 +123,12 @@ export const Banner = () => {
             animate="animate"
             className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10"
           >
-            <Button icon={FiArrowRight}>Quem somos</Button>
-            <Button icon={FiArrowRight}>Como te ajudamos</Button>
+            <a className="w-full" href="#about">
+              <Button icon={FiArrowRight}>Quem somos</Button>
+            </a>
+            <a className="w-full" href="#help-you">
+              <Button icon={FiArrowRight}>Como te ajudamos</Button>
+            </a>
           </motion.div>
         </motion.div>
 
