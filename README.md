@@ -1,6 +1,7 @@
 # Site DPVAT Campinas
-Como desenvolvedor, tenho a honra de criar o site para a DPVAT Campinas, uma empresa dedicada a ajudar pessoas que precisam de indenizações pelo Seguro DPVAT após acidentes de trânsito.
+![GIF do Vídeo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2ZvNmdmOG1rYmM5eGYwMjBkNml2ZzA0aG52dGl1bzFxaHB1ajB3diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mjBLAofp4Gq4mP41iC/giphy.gif)
 
+Como desenvolvedor, tenho a honra de criar o site para a DPVAT Campinas, uma empresa dedicada a ajudar pessoas que precisam de indenizações pelo Seguro DPVAT após acidentes de trânsito.
 
 ## Descrição do Projeto
 Desenvolvi um site informativo que simplifica a compreensão dos serviços oferecidos pela DPVAT Campinas.
