@@ -8,6 +8,7 @@ import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const HelpYou = () => {
   const controls = useAnimation();
@@ -191,9 +192,16 @@ export const HelpYou = () => {
                 initial="initial"
                 animate="animate"
               >
-                <Button icon={FiArrowRight} variants="secondary">
-                  Conheça o nosso método
-                </Button>
+                <Link
+                  href="https://www.instagram.com/dpvatcamp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1"
+                >
+                  <Button icon={FiArrowRight} variants="secondary">
+                    Conheça o nosso método
+                  </Button>
+                </Link>
               </motion.div>
             </div>
           </div>

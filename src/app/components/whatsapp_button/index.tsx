@@ -11,7 +11,7 @@ export const WhatsAppButton = () => {
         className="bg-green-600 w-16 h-16 flex justify-center items-center rounded-full cursor-pointer"
       >
         <Link
-          href="https://api.whatsapp.com/send?phone=5519999985348"
+          href="https://api.whatsapp.com/send?phone=551987299161"
           target="_blank"
         >
           <Image

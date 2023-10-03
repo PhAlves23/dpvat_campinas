@@ -115,7 +115,8 @@ export const Banner = () => {
             maiores que o DPVAT.
           </p>
           <p className="text-lg mb-8">
-            Fale com a nossa equipe e descubra os seus direitos gratuitamente!
+            Fale gratuitamente com nossa equipe e descubra todos os
+            seus direitos.
           </p>
           <motion.div
             variants={buttonVariant}
