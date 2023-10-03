@@ -8,7 +8,11 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 
-export const Banner = () => {
+interface BannerProps {
+  bannerText: JSX.Element;
+}
+
+export const Banner = ({ bannerText }: BannerProps) => {
   const controls = useAnimation();
 
   const [ref, inView] = useInView({});
@@ -74,77 +78,19 @@ export const Banner = () => {
         className="container-desktop p-5 pb-10 gap-10 lg:gap-0 lg:py-28 lg:h-[37.5rem] flex flex-col lg:flex-row relative"
         ref={ref}
       >
-        <motion.div
-          variants={textVariant}
-          initial="initial"
-          animate="animate"
-          className="lg:max-w-2xl z-10"
-        >
-          <div className="flex items-end">
-            <h2 className="text-2xl font-semibold mb-3">
-              Sofreu um acidente e não sabe se tem direito a alguma indenização?
-            </h2>
-
-            <div className="w-full lg:w-0" data-aos="fade-left">
-              <img
-                src="/banner-image.webp"
-                width={150}
-                height={184}
-                alt="dsadasdas"
-                className="pb-3 md:hidden"
-              />
-              {/* <Image
-                className="pb-3 md:hidden"
-                src="/banner-image.webp"
-                width={150}
-                height={184}
-                alt="Banner Image"
-              /> */}
-            </div>
-          </div>
-          <p className="text-lg mb-3">
-            A DPVAT Campinas te ajuda a receber todas as indenizações a que tem
-            direito após um acidente sem qualquer burocracia,{" "}
-            <span className="text-primary font-bold">
-              incluindo o seguro DPVAT
-            </span>
-            !
-          </p>
-          <p className="text-lg mb-3">
-            Você irá se surpreender ao descobrir que pode ter direitos muito
-            maiores que o DPVAT.
-          </p>
-          <p className="text-lg mb-8">
-            Fale gratuitamente com nossa equipe e descubra todos os
-            seus direitos.
-          </p>
-          <motion.div
-            variants={buttonVariant}
-            initial="initial"
-            animate="animate"
-            className="flex flex-col lg:flex-row items-center gap-5 lg:gap-10"
+        <div className="flex justify-center items-center">
+          <div className="pt-24 lg:pt-56">{bannerText}</div>
+          <div
+            className="hidden md:block lg:absolute lg:right-0 lg:bottom-0"
+            data-aos="fade-left"
           >
-            <a className="w-full" href="#about">
-              <Button icon={FiArrowRight}>Quem somos</Button>
-            </a>
-            <a className="w-full" href="#help-you">
-              <Button icon={FiArrowRight}>Como te ajudamos</Button>
-            </a>
-          </motion.div>
-        </motion.div>
-
-        {/* <motion.div variants={personVariant} initial="hide" animate="show"> */}
-        <div
-          className="hidden md:block lg:absolute lg:right-0 lg:bottom-0"
-          data-aos="fade-left"
-        >
-          <img
-            src="/banner-image.webp"
-            width={418}
-            height={513}
-            alt="dsadasdas"
-          />
-          {/* <Image
+            <img
+              src="/banner-image.webp"
+              width={418}
+              height={513}
+              alt="dsadasdas"
+            />
+            {/* <Image
             className="hidden lg:block lg:absolute lg:right-0 lg:bottom-0"
             src="/banner-image.webp"
             width={418}
@@ -152,8 +98,8 @@ export const Banner = () => {
             alt="Banner Image"
             loading="lazy"
           /> */}
+          </div>
         </div>
-        {/* </motion.div> */}
       </div>
     </div>
   );

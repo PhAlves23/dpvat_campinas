@@ -4,10 +4,14 @@ import { servicesItems } from "@/app/mocks";
 import { CardServices } from "../card_services";
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 import { motion } from "framer-motion";
 
-export const Services = () => {
+interface ServicesProps {
+  setBannerText: Dispatch<SetStateAction<JSX.Element>>;
+}
+
+export const Services = ({ setBannerText }: ServicesProps) => {
   const controls = useAnimation();
 
   const [ref, inView] = useInView({});
@@ -78,10 +82,12 @@ export const Services = () => {
             return (
               <CardServices
                 key={id}
+                id={id}
                 image={image}
                 title={title}
                 description={description}
                 path={path}
+                setBannerText={setBannerText}
               />
             );
           })}
