@@ -10,13 +10,13 @@ export const Footer = () => {
             &copy;DPVAT Campinas - Todos os direitos reservados.
           </p>
           <Link
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/dpvatcamp/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1"
           >
             <AiOutlineInstagram size={32} />
-            @dpvatcampinas
+            @dpvatcamp
           </Link>
         </div>
       </div>
